@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle instance) {
@@ -16,16 +16,16 @@ public class MainActivity extends AppCompatActivity {
 
         EditText usernameInput = findViewById(R.id.usernameInput);
         EditText passwordInput = findViewById(R.id.passwordInput);
-        Button loginButton = findViewById(R.id.loginButton);
+        Button loginBtn = findViewById(R.id.loginButton);
         TextView loginMessageException = findViewById(R.id.loginMessage);
 
-        loginButton.setOnClickListener(view -> {
+        loginBtn.setOnClickListener(view -> {
             String username = usernameInput.getText().toString().trim();
             String password = passwordInput.getText().toString();
 
             // Temp data to test login.
             if (username.equals("staff") && password.equals("1234")) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(LoginPage.this, MainMenuPage.class);
                 startActivity(intent);
 
             } else {

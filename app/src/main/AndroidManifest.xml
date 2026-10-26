@@ -12,19 +12,19 @@
         android:theme="@style/Theme.FSP_StaffApp">
 
         <activity
-            android:name=".OccupiedParkingSpotsActivity"
+            android:name=".OccupiedParkingSpotsPage"
             android:exported="false" />
 
         <activity
-            android:name=".ReportIllegalParkingActivity"
+            android:name=".ReportIllegalParkingPage"
             android:exported="false" />
 
         <activity
-            android:name=".MenuActivity"
+            android:name=".MainMenuPage"
             android:exported="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginPage"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
 

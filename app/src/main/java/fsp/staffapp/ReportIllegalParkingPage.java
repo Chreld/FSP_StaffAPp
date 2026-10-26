@@ -1,10 +1,9 @@
 package fsp.staffapp;
 
 import android.os.Bundle;
-
 import fsp.staffapp.template.Template;
 
-public class ReportIllegalParkingActivity extends Template {
+public class ReportIllegalParkingPage extends Template {
 
     @Override
     protected void onCreate(Bundle instance) {

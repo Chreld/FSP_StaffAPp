@@ -8,13 +8,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Template extends AppCompatActivity {
 
+    protected LinearLayout layout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
     protected void menuTemplate(int titleText, int messageText) {
-        LinearLayout layout = new LinearLayout(this);
+        layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setGravity(Gravity.CENTER);
         layout.setPadding(32, 32, 32, 32);
